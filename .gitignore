@@ -12,4 +12,8 @@ Thumbs.db
 dist/
 node_modules/
 _build/
-attached/*
+attached/
+.vs/
+bin/
+obj/
+*.*proj.user

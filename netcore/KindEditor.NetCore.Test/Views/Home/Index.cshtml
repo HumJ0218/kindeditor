@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<textarea id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+
+<script src="~/lib/jquery/jquery-3.4.1.min.js"></script>
+<script src="~/lib/kindeditor/kindeditor-all-min.js"></script>
+<script src="~/lib/kindeditor/lang/zh-CN.js"></script>
+<script>
+    KindEditor.ready(function (K) {
+        window.editor = K.create('#editor_id', {
+            allowFileManager: true,
+            uploadJson: '/kindeditor/upload',
+            fileManagerJson: '/kindeditor/filemanager',
+        });
+    });
+</script>
