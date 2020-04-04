@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\attached\**" />
+    <Content Remove="wwwroot\attached\**" />
+    <EmbeddedResource Remove="wwwroot\attached\**" />
+    <None Remove="wwwroot\attached\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\KindEditor.NetCore\KindEditor.NetCore.csproj" />
   </ItemGroup>
 

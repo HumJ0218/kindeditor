@@ -31,7 +31,7 @@ namespace KindEditor.AppBuilder
         /// 获取或设置允许上传的文件分类及其扩展名
         /// </summary>
         public Dictionary<string, string[]> FileTypeExtension { get; set; } = new Dictionary<string, string[]> {
-            { "image", "bmp,jpg,jpeg,gi,png,svg,tif,tiff".Split(',') },
+            { "image", "bmp,jpg,jpeg,gif,png,svg,tif,tiff".Split(',') },
             { "flash", "fla,swf".Split(',') },
             { "media", "wav,mp3,wma,ogg,flac,mid,mod,xm,avi,wmv,mp4,mkv,mpg,rm,rmvb,asf".Split(',') },
             { "file", "doc,docx,xls,xlsx,ppt,pptx,txt,zip,rar,gz,torrent,xml,html,lrc,lrcx".Split(',') },
